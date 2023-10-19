@@ -1,0 +1,264 @@
+<html>
+    <head>
+       <style>
+        
+         body
+{
+    background-image: url('https://www.highlandernews.org/wp-content/uploads/ops.marketstreet.wikimediacommons-1024x768.jpg');
+    
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	
+
+    font-family: 'Arial';
+}
+        div{
+   
+    width: 200px;
+    
+    margin-top: 50px;
+    padding: 20px;
+    margin-left: 80px;
+}
+#div2 {
+		  padding: 16px;
+		}
+        #div2 {
+			background-color: #ffffff;
+			margin: 150px auto;
+			padding: 20px;
+			width: 300px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px #999;
+            margin-left: -480px;
+		}
+        button {
+			background-color: #3700ff;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+           
+		}
+       .btn8 {
+			background-color: #3700ff;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+            max-width: 300px;
+    margin: 600px;
+    margin-left: 40px;
+    margin-top: 30px;
+		}
+
+		button:hover {
+			background-color: #45a049;
+		}
+        input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+        #div1{
+
+            visibility: hidden;
+        }
+        .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+  width: 1100px;
+  margin-block: auto;
+  margin-left: 200px;
+}
+#div0 {
+  padding: 16px;
+  background-color: #ccc;
+  margin-left: 590px;
+  margin-inline: auto;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+
+       </style>
+    </head>
+    <body>
+        <button onclick="document.getElementById('id01').style.display='block'" class="btn8" style="width:auto;">Sign Up</button>
+        
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div id="div0">
+            <h1>Sign Up</h1>
+            <hr>
+            <input type="text" id="in1" placeholder="Enter you name"><br>
+            <input type="text" id="in2" placeholder="Enter a password"><br>
+            <span id="s1" style="color: red;"></span><br>
+            <button onclick="add()">Add user</button>
+        </div>
+</div>
+
+        <div id="div1">
+            <button onclick="show()">Show users in table</button><br><br>
+            <table border="2px" id="table1" >
+                    <tr><th>Nom Complet</th><th>Password</th></tr>
+            </table>
+        </div>
+
+        <div id="div2">
+            <h2>Login</h2>
+            <form action="prj.html" onsubmit="return login()">
+                <label for="username">Username</label>
+                <input type="text" id="username"  placeholder="Enter username">
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <span id="s2" style="color: red;"></span><br>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <a href="prj.html"><button id="log">LOG IN</button></a>
+                <br><br>
+                
+            </form>
+        </div>
+
+
+        <script>
+            
+            var users = [{ username:'ali el', password:'ali123456' },
+             { username:'amine ze', password:'12345678' } ]
+
+
+             function add(){
+
+                var userNameValue = document.getElementById('in1').value;
+                var passValue = document.getElementById('in2').value;
+
+                if(passValue.length < 8){
+
+                    document.getElementById('s1').innerHTML = 'password must contains 8 chars'
+                }else{
+                    var user = {};
+
+                    user.username = userNameValue;
+                    user.password= passValue;
+
+                    users.push(user);
+                    console.log(users)
+                }
+
+             }
+
+
+             function show(){
+
+                for(var i=0; i<users.length; i++){
+                    // <tr><th>Nom Complet</th><th>Password</th></tr>
+                    // <tr><td>Nom Complet value</td><td>Password value</td></tr>
+
+                    var td1 = document.createElement('td');
+                    var td2 = document.createElement('td');
+
+                    var tr = document.createElement('tr');
+
+                    var usernameValue = users[i].username; 
+                    var passValue = users[i].password;
+
+                    td1.append(usernameValue);
+                    td2.append(passValue);
+                    tr.append(td1);
+                    tr.append(td2);
+
+                    var table = document.getElementById('table1');
+
+                    table.append(tr);
+                }
+             }
+            
+
+
+             function myFunction() {
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+
+             function login(){
+
+                var userValue = document.getElementById('in3').value;
+                var passValue = document.getElementById('in4').value;
+
+                if(userValue == ''){
+                    document.getElementById('s2').innerHTML = 'user name must be filed out';
+                    return false;
+                }
+                else if(passValue == ''){
+                    document.getElementById('s2').innerHTML = 'password name must be filed out'
+                    return false;
+                }
+
+                for(var i=0; i<users.length;i++){
+
+                    if(userValue == users[i].username && passValue == users[i].password){
+                        return true;
+                    }
+                }
+                document.getElementById('s2').innerHTML = 'username and password do not match';
+                        return false;
+             }
+             window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+var modal = document.getElementById('id01');
+
+        </script>
+    </body>
+</html>

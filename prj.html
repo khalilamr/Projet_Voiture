@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Cars location</title>
+    <link rel="stylesheet" href="prj1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+
+     
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 94%;
+  margin-top: -490px;
+}
+
+.social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 8px;
+}
+
+.social-buttons a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #a3a1a1, #0f0f0f);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons a i {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i {
+  background: linear-gradient(45deg, #a3a1a1, #0f0f0f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+.w3-padding-64 {
+    padding-top: 250px!important;
+    padding-bottom: 64px!important;
+    margin-left: 350px;
+}
+h1.cn{
+  margin-left: 500px;
+}
+
+      </style>
+        
+</head>
+<body>
+  
+ 
+    
+    <nav class="navbar">
+        <div class="icon">
+            <h1 class="logo">Cars<span>Luxe</span> </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                
+                <li><a href="#art" >ACCUEIL</a></li>
+                <div class="dropdown">
+                  <li><a href="#" onclick="myFunction()" class="dropbtn">MARQUES</a></li>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="tesla2.html">Tesla</a>
+                    <a href="audi.html">Audi</a>
+                    <a href="bmw.html">Bmw</a>
+                    <a href="mercedes.html">Mercedes</a>
+                    <a href="porsche.html">Porsche</a>
+                  </div>
+                </div>
+                <li><a href="#cama">CONDITIONS</a></li>
+                <li><a href="#drop">CONTACTER</a></li>
+                
+    </nav>
+            </ul>
+        </div>
+    <article class="art">
+        <h2><b>RÉALISEZ VOS RÊVES !</b> </h2>
+        <p>CarsLuxe vous permet de louer les plus belles voitures de luxe<br>et de sport au Maroc.
+<br>
+            Avec plus de 10 modèles haut de gamme disponibles,<br>nous saurons répondre à tous vos souhaits.
+            <br>
+            La réservation en ligne est simple, facile et sécurisée.<br>Choisissez le véhicule de vos rêves ci-dessous<br>et contactez-nous pour obtenir des informations<br>précises sur la disponibilité, les prix et les conditions.
+            <br>
+            Réalisez vos rêves avec CarsLuxe !</p>
+            
+    </article>
+    <a href="voitures.html"> <button class="bt"><b>Nos Voitures</b> </button></a>
+    <header>
+      <div class="social-buttons">
+     <a href="https://www.whatsapp.com/?lang=fr"><i class="fab fa-whatsapp"></i></a>
+     <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+     
+     <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"></i></a>
+     <a href="https://fr.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+     <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+   </div>
+   </header>
+   
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 id="drop"class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Ecrire? un message!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Tanger, MAR<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +212 623181377<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: carsluxe321@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="https://www.google.com/intl/fr/gmail/about/" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h1 id="cama" class="cn">Nos 6 conseils et pièges à éviter</h1>
+    <p>
+     <strong>1. Sachez que vous réservez une catégorie et non un modèle</strong> <br>
+     <br>- Selon la catégorie choisie, c’est le loueur qui vous attribuera un modèle précis en fonction des disponibilités des véhicules.
+      <br> - Vérifiez que le coffre peut contenir toutes vos valises.
+      <br>- L'écart de prix entre deux catégories peut être très faible, comparez.
+      <br><strong> 2. Choisissez bien l'emplacement de l’agence de location</strong><br>
+      <br>- Pour gagner du temps : préférez les agences accessibles à pied depuis le terminal de l'aéroport.
+      <br>- Pour économiser : comparez les prix avec les agences plus excentrées voire en centre ville.
+      <br><strong >3. Vérifiez les frais cachés</strong> <br>
+      <br>- Conducteur supplémentaire : attention aux coûts additionnels journaliers.
+      <br>- Jeune conducteur : vérifier le montant du surcoût la plupart du temps pratiqué.
+      <br>- Frais d’annulation : bien s’assurer que les frais d’annulation sont gratuits, on ne sait jamais en cas d’imprévu de dernière minute.
+      <br>- Kilométrage illimité : rouler librement sans coût supplémentaire, mais doit être inclus dans votre contrat.
+      <br>- GPS : Avant de prendre l'option GPS vérifiez si votre forfait téléphonique permet d'utiliser le GPS de votre téléphone sans surcoût.
+     <br><strong >4. Soyez vigilants sur les assurances, franchises et garanties supplémentaires</strong> <br>
+      La majorité des loueurs inclut dans leur forfait : l’assurance au tiers, l’assurance tous risques et vol. Le problème est qu’en général, la franchise est souvent exorbitante. Celle-ci peut- être réduite grâce à une assurance supplémentaire.
+      <br>- Vérifiez quelles assurances sont comprises avec votre carte bancaire.
+      <br>- Si vous prenez l'assurance supplémentaire directement chez l’agence de location lors de la prise de véhicule, cela sera plus facile à gérer en cas d’incident que de passer par un tiers.
+      <br>- Si vous prenez l'assurance sur la plateforme en ligne, elle sera sûrement moins chère.
+      <br>- Ayez une carte de crédit avec autorisation pour débiter la caution (plafond).
+      <br>- La majorité des opérateurs exigent le paiement de la location par carte de crédit.
+      
+       <br><strong >5. A checker lors de la prise en charge et la restitution</strong> <br>
+       <br>- Prise en charge du véhicule : contrôlez le niveau de carburant, prendre en photo extérieur et intérieur du véhicule.
+       <br>- Restitution : Reprendre des photos du véhicule. Vérifiez l’heure de retour stipulée dans le contrat, faire le plein, nettoyer rapidement intérieur et extérieur, restituez GPS et autres options.
+      
+      <br><strong>6. Utilisez un comparateur pour trouver le meilleur prix</strong> <br>
+      <br>- Les agences et offres sont nombreuses. Notre comparateur permet de trouver l'offre la moins chère en comparant toutes les caractéristiques: options, avis client, emplacement de l'agence, frais...
+      <br>- Réservez à l’avance : les tarifs sont souvent plus avantageux.
+      <br>- Prenez de la marge sur les horaires de prise et de restitution du véhicule, en général les prix sont à la journée quelles que soit les heures de prise du véhicule, mais les retards peuvent être facturés...
+      <br>- Méfiez-vous des prix trop attractifs en vérifiant les frais cachés. En cas de doute privilégiez les grandes enseignes.</p>
+  </footer>
+        
+    
+
+     <script>
+       
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+       
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        
+        </script> 
+  
+</body>
+</html>
+
+
+

@@ -1,0 +1,134 @@
+*{
+    scroll-behavior: smooth;
+    transition: 0.8s;
+}body{
+    background-image: url('https://www.magnum-loc.com/application/files/thumbnails/slider_homepage/2115/4419/5950/Magnum-location.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+span{
+    color: yellow;
+}
+.navbar{
+    
+    height: 90px; 
+    width: -110px;
+    display: flex;
+    justify-content: center;
+    
+    font-size: 1.2rem;
+    
+      margin-left: -280px;
+      margin-top: -15px;
+padding: 10px;
+margin: -1%;
+
+}
+.icon{
+
+    width: 250px; ;
+    float:left ;
+    height: 75px; ;
+}
+.logo{
+    color: rgb(255, 81, 0);
+    font: size 55px; ;
+    font-family: Arial;
+   padding-left: 10px;
+   margin-left: -130px;
+   margin-right: 100px;
+  
+   float: left;
+   padding-top: 10px;
+}
+.menu{
+    width: 800px;
+    float: left;
+    height: 70px;
+
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+}
+ul li{
+list-style: none;
+margin-left: 400px;
+margin-top: 50px;
+font-size: 14px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    margin-left: 50px;
+}
+ul li a:hover{
+    color: rgb(209, 145, 115);
+}
+.art{
+    color: white;
+    margin-top: 120px;
+    margin-left: 50px;
+    font-family: Arial;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+.bt{
+    text-decoration: none;
+
+    font-size: 1rem;
+    background-image: linear-gradient(to top,#f77062 0%,rgba(226, 205, 17, 0.067));
+    padding: 10px 30px;
+    border: 1px solid #120e0e;
+    border-radius: 30px;
+   
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    margin-left: 130px;
+}
+.art h2{
+    font-size: 40px;
+    font-weight: 900px;
+}
+.navbar{
+    background-color: transparent;
+}
+.navbar ul{
+    list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+}
+.navbar li {
+    margin: 45px 10px;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+  
+
+
+
+
+
+  /*<div id="div0">
+            <input type="text" id="in1" placeholder="Enter you name"><br>
+            <input type="text" id="in2" placeholder="Enter a password"><br>
+            <span id="s1" style="color: red;"></span><br>
+            <button onclick="add()">Add user</button>
+        </div>
